@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dropdown Menu-JS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="logo">
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li id="products" class="show"><a href="#">Product</a><i class="fas fa-caret-down"></i>
+        
+          <div id="dropDown" class="dropdown-content" id="opened">
+            <a href="#">Acer</a>
+            <a href="#">Asus</a>
+            <a href="#">Dell</a>
+            <a href="#">HP</a>
+            <a href="#">Lenovo</a>
+            <a href="#">Toshiba</a>
+          </div>
+        
+        </li>
+        
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">News</a></li>
+        <li class="end"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
