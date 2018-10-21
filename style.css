@@ -4,6 +4,14 @@ body {
   background: lightgray;
 }
 
+.fas.fa-bars {
+  display: none;
+}
+
+.mobile-slider {
+  display: none;
+}
+
 .logo img {
   width: 150px;
   height: 150px;
@@ -82,7 +90,6 @@ ul li a:hover {
 
 #dropDown a {
   font-family: 'Open Sans', sans-serif;
-  ;
   font-size: 18px;
   font-weight: 300;
   padding: 10px;
@@ -96,5 +103,91 @@ ul li a:hover {
 #dropDown a:hover {
   color: #dcdbdb;
   background: rgb(76, 75, 75);
+}
+
+/* -------------------------  MEDIA QUERIES --------------------------------- */
+
+@media(max-width: 827px) {
+  ul li a {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 767px) {
+
+  .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+  }
+
+  .logo img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .menu {
+    position: absolute;
+    top: 25%;
+    display: flex;
+    background: #484848;
+    width: 100%;
+  }
+
+  ul li a {
+    font-size: 18px;
+  }
+
+  #dropDown {
+    width: 120px;
+    background: rgb(119, 116, 116);
+    margin-top: 16px;
+  }
+
+  #dropDown a {
+    font-size: 16px;
+    padding: 8px;
+
+  }
+}
+
+@media(max-width: 539px) {
+
+  .menu {
+    display: none;
+  }
+
+  .logo img {
+    margin-left: 15px;
+  }
+.fas.fa-bars {
+  display: block;
+  color: #fff;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.mobile-slider {
+  display: block;
+position: absolute;  
+  width: 50%;
+  background: #dcdbdb;
+  height: 100%;
+  background: rgb(119, 116, 116);
+  top: 75;
+  right: 0;
+}
+
+ul.mobile {
+  display: block;
+  /* position: absolute; */
+  
+  width: auto;
+}
 
 }

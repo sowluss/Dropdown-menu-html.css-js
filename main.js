@@ -15,7 +15,7 @@ $("#dropDown").on("click", function (event) {
 // stop any clicks on clickable <li> from traveling up to the document
 $("#products").on("click", function (event) {
   event.stopPropagation();
-  $("#dropDown").slideToggle("fast");
+  $("#dropDown").slideToggle(200); 
 });
 
 
