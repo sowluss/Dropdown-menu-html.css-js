@@ -19,6 +19,14 @@ $("#products").on("click", function (event) {
 });
 
 
+
+// Mobile slider
+
+$('.mob-icon').click(function() {
+  $('.mobile-slider').addClass('active').slideToggle(300);
+});
+
+
 // WORKING JAVASCRIPT PART
 
 // const products = document.getElementById('products');

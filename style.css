@@ -83,10 +83,11 @@ ul li a:hover {
   margin-left: 10px;
 }
 
-/* Class for toggle */
-.show {
+/* Class for toggle JS */
+
+/* .show {
   display: block;
-}
+} */
 
 #dropDown a {
   font-family: 'Open Sans', sans-serif;
@@ -133,7 +134,7 @@ ul li a:hover {
 
   .menu {
     position: absolute;
-    top: 25%;
+    top: 130px;
     display: flex;
     background: #484848;
     width: 100%;
@@ -165,29 +166,47 @@ ul li a:hover {
   .logo img {
     margin-left: 15px;
   }
-.fas.fa-bars {
-  display: block;
-  color: #fff;
-  margin-right: 30px;
-  cursor: pointer;
-}
 
-.mobile-slider {
-  display: block;
-position: absolute;  
-  width: 50%;
-  background: #dcdbdb;
-  height: 100%;
-  background: rgb(119, 116, 116);
-  top: 75;
-  right: 0;
-}
+  .fas.fa-bars {
+    display: block;
+    color: #fff;
+    margin-right: 30px;
+    cursor: pointer;
+  }
 
-ul.mobile {
-  display: block;
-  /* position: absolute; */
-  
-  width: auto;
-}
+  .mobile-slider {
+    display: block;
+    position: absolute;
+    width: 50%;
+    background: #dcdbdb;
+    height: 100%;
+    background:#484848;
+    top: 75;
+    right: -300px;
+  }
+
+  .active {
+    right: 0;
+    transition: .5s;
+  }
+
+  ul.mobile {
+    display: block;
+    width: 100%;
+   
+  }
+
+  ul.mobile li {
+   padding: 10px;
+   text-align: center;
+   width: 80px;
+  }
+
+  ul.mobile li a:hover {
+    color: #8eed3a;
+    transition: .3s;
+  }
+
+   
 
 }
