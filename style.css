@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background: lightgray;
 }
 
 .logo img {
@@ -31,7 +32,6 @@ ul {
 ul li {
   margin-right: 35px;
   list-style: none;
- 
 }
 
 ul li a {
@@ -43,10 +43,8 @@ ul li a {
 }
 
 ul li a:hover {
-  
- background: -webkit-linear-gradient(grey, #6ce101); 
--webkit-background-clip: text; 
--webkit-text-fill-color: transparent; 
+  color: #8eed3a;
+  transition: .3s;
 }
 
 .fas {
@@ -67,16 +65,36 @@ ul li a:hover {
 .dropdown-content {
   display: none;
 }
+
 /* Make vidible on load */
 #dropDown {
   position: absolute;
   width: 150px;
-  background: grey;
+  background: rgb(119, 116, 116);
   margin-top: 10px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* Class for toggle */
-.show{
+.show {
   display: block;
-} 
+}
+
+#dropDown a {
+  font-family: 'Open Sans', sans-serif;
+  ;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+#dropDown a:last-child {
+  border-bottom: none;
+}
+
+#dropDown a:hover {
+  color: #dcdbdb;
+  background: rgb(76, 75, 75);
+
+}
