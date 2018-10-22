@@ -180,7 +180,7 @@ ul li a:hover {
     width: 50%;
     background: #dcdbdb;
     height: 100%;
-    background:#484848;
+    background: #484848;
     top: 75;
     right: -300px;
   }
@@ -193,13 +193,13 @@ ul li a:hover {
   ul.mobile {
     display: block;
     width: 100%;
-   
+
   }
 
   ul.mobile li {
-   padding: 10px;
-   text-align: center;
-   width: 80px;
+    padding: 10px;
+    text-align: center;
+    width: 80px;
   }
 
   ul.mobile li a:hover {
@@ -207,6 +207,26 @@ ul li a:hover {
     transition: .3s;
   }
 
-   
+  #products {
+    position: relative;
+  }
 
-}
+  .mobile #dropDown {
+    display: block;
+    position: absolute;
+    width: 150px;
+    background: rgb(119, 116, 116);
+    top: -15px;
+    right: 140px;
+    text-align: center;
+    z-index: -1;
+  }
+
+  .mobile .dropdown-content {
+    display: none;
+  }
+
+  }
+
+
+

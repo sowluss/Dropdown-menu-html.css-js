@@ -27,6 +27,26 @@ $('.mob-icon').click(function() {
 });
 
 
+// Mobile Slider Dropdown
+
+$(document).on("click", function () {
+  $(".mobile #dropDown").hide();
+});
+
+// Prevent clicks on #dropDown from bubbling up to the document
+$(".mobile #dropDown").on("click", function (event) {
+  event.stopPropagation();
+});
+
+$(".mobile #products").on("click", function (event) {
+  event.stopPropagation();
+  $(".mobile #dropDown").slideToggle(300); 
+});
+
+
+
+
+
 // WORKING JAVASCRIPT PART
 
 // const products = document.getElementById('products');
